@@ -24,7 +24,6 @@ export default () => {
           </ButtonGroup>
         </div>
       </div>
-
       <Row>
         <Col xs={12} xl={12}>
           <GeneralInfoForm />
