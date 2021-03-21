@@ -99,6 +99,10 @@ export default (props = {}) => {
               <NavItem title="Company name" link={Routes.Lock.path} image={ReactHero} />
               <NavItem title="Бүртгэл" icon={faCog} link={Routes.Settings.path} />
               <NavItem title="Жагсаалт" icon={faTable} link={Routes.Transactions.path} />
+              <NavItem title="Зар" icon={faSignOutAlt} link={Routes.FooterOfLock.path} />
+
+              <NavItem title="Golden user" icon={faSignOutAlt} link={Routes.BootstrapTables.path} />
+
               <Dropdown.Divider className="my-3 border-indigo" />
             </Nav>
           </div>

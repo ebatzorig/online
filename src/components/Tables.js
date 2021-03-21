@@ -82,25 +82,26 @@ export const PageTrafficTable = () => {
           <Card.Link href="#" className="text-primary fw-bold">{id}</Card.Link>
         </td>
         <td className="fw-bold">
-          <FontAwesomeIcon icon={sourceIcon} className={`icon icon-xs text-${sourceIconColor} w-30`} />
+          {/* <FontAwesomeIcon icon={sourceIcon} className={`icon icon-xs text-${sourceIconColor} w-30`} /> */}
           {source}
         </td>
         <td>{sourceType}</td>
         <td>{category ? category : "--"}</td>
         <td>{rank ? rank : "--"}</td>
         <td>
-          <Row className="d-flex align-items-center">
+          <td>{trafficShare ? trafficShare : "--"}</td>
+          {/* <Row className="d-flex align-items-center">
             <Col xs={12} xl={2} className="px-0">
               <small className="fw-bold">{trafficShare}%</small>
             </Col>
             <Col xs={12} xl={10} className="px-0 px-xl-1">
               <ProgressBar variant="primary" className="progress-lg mb-0" now={trafficShare} min={0} max={100} />
             </Col>
-          </Row>
+          </Row> */}
         </td>
-        <td>
+        {/* <td>
           <ValueChange value={change} suffix="%" />
-        </td>
+        </td> */}
       </tr>
     );
   };
@@ -111,13 +112,14 @@ export const PageTrafficTable = () => {
         <Table responsive className="table-centered table-nowrap rounded mb-0">
           <thead className="thead-light">
             <tr>
-              <th className="border-0">#</th>
-              <th className="border-0">Traffic Source</th>
-              <th className="border-0">Source Type</th>
-              <th className="border-0">Category</th>
-              <th className="border-0">Global Rank</th>
-              <th className="border-0">Traffic Share</th>
-              <th className="border-0">Change</th>
+              <th className="border-0">id</th>
+              <th className="border-0">Үйлчилүүлэгчийн нэр</th>
+              <th className="border-0">Олговол зохих 10%</th>
+              <th className="border-0">Тухайн сард нийт</th>
+              <th className="border-0">Нийт дүн</th>
+              <th className="border-0">Нийт захиалсан тоо</th>
+              
+              {/* <th className="border-0">Change</th> */}
             </tr>
           </thead>
           <tbody>
@@ -192,9 +194,9 @@ export const TransactionsTable = () => {
 
   const TableRow = (props) => {
     const { invoiceNumber, subscription, price, issueDate, dueDate, status } = props;
-    const statusVariant = status === "Paid" ? "success"
-      : status === "Due" ? "warning"
-        : status === "Canceled" ? "danger" : "primary";
+    const statusVariant = status === "Бүртгэсэн" ? "success"
+      : status === "Дууссан" ? "warning"
+        : status === "Цуцалсан" ? "danger" : "primary";
 
     return (
       <tr>
@@ -220,7 +222,8 @@ export const TransactionsTable = () => {
         </td>
         <td>
           <span className="fw-normal">
-            ${parseFloat(price).toFixed(2)}
+            {/* {parseFloat(price).toFixed(2)} */}
+            {price}
           </span>
         </td>
         <td>
@@ -259,12 +262,12 @@ export const TransactionsTable = () => {
           <thead>
             <tr>
               <th className="border-bottom">#</th>
-              <th className="border-bottom">Bill For</th>
-              <th className="border-bottom">Issue Date</th>
-              <th className="border-bottom">Due Date</th>
-              <th className="border-bottom">Total</th>
-              <th className="border-bottom">Status</th>
-              <th className="border-bottom">Action</th>
+              <th className="border-bottom">Код</th>
+              <th className="border-bottom">Бүртгэсэн огноо</th>
+              <th className="border-bottom">Хүлээлгэж өгсөн огноо</th>
+              <th className="border-bottom">Мөнгөн дүн</th>
+              <th className="border-bottom">Төлөв</th>
+              <th className="border-bottom">Үйлдэл</th>
             </tr>
           </thead>
           <tbody>

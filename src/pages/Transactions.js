@@ -15,7 +15,7 @@ export default () => {
             <Breadcrumb.Item active>Жагсаалт</Breadcrumb.Item>
           </Breadcrumb>
           <h4>Жагсаалт</h4>
-          <p className="mb-0">Your web analytics dashboard template.</p>
+          <p className="mb-0">Тайлбар бичих хэсэг</p>
         </div>
         <div className="btn-toolbar mb-2 mb-md-0">
           <ButtonGroup>

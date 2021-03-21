@@ -19,11 +19,11 @@ const pageVisits = [
 ];
 
 const pageTraffic = [
-    { id: 1, source: "Direct", sourceType: "Direct", trafficShare: 51, change: 2.45, sourceIcon: faGlobeEurope, sourceIconColor: "gray" },
-    { id: 2, source: "Google Search", sourceType: "Search / Organic", trafficShare: 18, change: 17.67, sourceIcon: faGoogle, sourceIconColor: "info" },
-    { id: 3, source: "youtube.com", sourceType: "Social", category: "Arts and Entertainment", rank: 2, trafficShare: 27, sourceIcon: faYoutube, sourceIconColor: "danger" },
-    { id: 4, source: "yahoo.com", sourceType: "Referral", category: "News and Media", rank: 11, trafficShare: 8, change: -9.30, sourceIcon: faYahoo, sourceIconColor: "purple" },
-    { id: 5, source: "twitter.com", sourceType: "Social", category: "Social Networks", rank: 4, trafficShare: 4, sourceIcon: faTwitter, sourceIconColor: "info" }
+    { id: 1, source: "99557848", sourceType: "51,000", category: "510,000",trafficShare: 150, change: 2.45,rank:"5,000,000", sourceIcon: faGlobeEurope, sourceIconColor: "gray" },
+    { id: 2, source: "98562545", sourceType: "33,000", category: "330,000", trafficShare: 18, rank: "1,000,000",change: 17.67, sourceIcon: faGoogle, sourceIconColor: "info" },
+    { id: 3, source: "88595652", sourceType: "50,000", category: "500,000", rank: "2,000,000", trafficShare: 27, sourceIcon: faYoutube, sourceIconColor: "danger" },
+    { id: 4, source: "88508020", sourceType: "20,000", category: "200,000", rank: "1,100,000", trafficShare: 8, change: -9.30, sourceIcon: faYahoo, sourceIconColor: "purple" },
+    { id: 5, source: "98505050", sourceType: "100,000", category: "1,000,000", rank: "4,000,000", trafficShare: 4, sourceIcon: faTwitter, sourceIconColor: "info" }
 ];
 
 const pageRanking = [

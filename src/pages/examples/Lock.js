@@ -34,8 +34,8 @@ export default () => {
                   <div className="user-avatar large-avatar mx-auto mb-3 border-dark p-2">
                     <Image src={Profile3} className="rounded-circle" />
                   </div>
-                  <h3 className="mb-3">Bonnie Green</h3>
-                  <p className="text-gray">Better to be safe than sorry.</p>
+                  <h3 className="mb-3">Нэр байрлана</h3>
+                  <p className="text-gray">Тайлбар оруулах</p>
                 </div>
                 <Form className="mt-5">
                   <Form.Group id="password" className="mb-4">

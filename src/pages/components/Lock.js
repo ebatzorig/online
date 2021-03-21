@@ -21,7 +21,7 @@ export default () => {
               <div className="bg-white shadow-soft border border-light rounded p-4 p-lg-5 w-100 fmxw-500">
                 <div className="text-center text-md-center mb-4 mt-md-0">
                   <h3 className="mb-3">Company name</h3>
-                  <p className="text-gray">Better to be safe than sorry.</p>
+                  <p className="text-gray">Тайлбар оруулах</p>
                 </div>
                 <Form className="mt-5">
                   <Form.Group id="password" className="mb-4">

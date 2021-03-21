@@ -14,6 +14,11 @@ export const Routes = {
     NotFound: { path: "/404" },
     ServerError: { path: "/500" },
 
+    FooterOfLock: { path: "/footer-lock" },
+    BootstrapTables: { path: "/tables/bootstrap-tables" },
+
+
+
     //Ашиглагдаж байгаа Component
     Invoice: { path: "/invoice" },
     Presentation: { path: "/presentation" },

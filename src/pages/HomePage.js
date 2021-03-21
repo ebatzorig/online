@@ -4,6 +4,10 @@ import { Routes } from "../routes";
 
 // pages
 import Transactions from "./Transactions";
+import { FooterOfLock } from "./FooterOfLock";
+
+import BootstrapTables from "./tables/BootstrapTables";
+
 import Settings from "./Settings";
 import Signin from "./components/Signin";
 import Signup from "./components/Signup";
@@ -87,6 +91,10 @@ export default () => (
     
     <RouteWithSidebar exact path={Routes.Transactions.path} component={Transactions} />
     <RouteWithSidebar exact path={Routes.Settings.path} component={Settings} />
+    <RouteWithSidebar exact path={Routes.FooterOfLock.path} component={FooterOfLock} />
+    <RouteWithSidebar exact path={Routes.BootstrapTables.path} component={BootstrapTables} />
+    
+    
   
     <Redirect to={Routes.NotFound.path} />
   </Switch>

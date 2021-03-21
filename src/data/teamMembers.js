@@ -26,7 +26,7 @@ export default [
     {
         "id": 3,
         "image": Profile3,
-        "name": "Bonnie Green",
+        "name": "Нэр байрлана",
         "statusKey": "offline",
         "icon": faCalendarCheck,
         "btnText": "Invite"

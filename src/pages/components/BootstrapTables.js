@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { Breadcrumb } from '@themesberg/react-bootstrap';
 
-import { PageTrafficTable } from "../../components/Tables";
+import { PageTrafficTable, RankingTable } from "../../components/Tables";
 
 
 export default () => {
@@ -15,16 +15,17 @@ export default () => {
           <Breadcrumb className="d-none d-md-inline-block" listProps={{ className: "breadcrumb-dark breadcrumb-transparent" }}>
             <Breadcrumb.Item><FontAwesomeIcon icon={faHome} /></Breadcrumb.Item>
             <Breadcrumb.Item>Tables</Breadcrumb.Item>
-            <Breadcrumb.Item active>Байнгын үйлчилүүлэгчид</Breadcrumb.Item>
+            <Breadcrumb.Item active>Bootstrap tables</Breadcrumb.Item>
           </Breadcrumb>
-          <h4>Байнгын үйлчлүүлэгчид</h4>
+          <h4>Bootstrap tables</h4>
           <p className="mb-0">
-            Тайлбар бичих хэсэг
+            Dozens of reusable components built to provide buttons, alerts, popovers, and more.
           </p>
         </div>
       </div>
 
       <PageTrafficTable />
+      <RankingTable />
     </>
   );
 };
